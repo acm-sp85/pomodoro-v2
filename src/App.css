@@ -1,0 +1,81 @@
+:root {
+  --fontColor: rgb(205, 205, 205);
+}
+
+* {
+  margin: 0px;
+}
+/* body {
+  background-color: rgb(96, 124, 176);
+} */
+h1 {
+  color: var(--fontColor);
+}
+
+.info-text {
+  text-align: center;
+  font-size: 4vw;
+}
+
+.title {
+  font-family: 'Poiret One', cursive;
+  letter-spacing: 1vw;
+  margin-top: 20px;
+}
+.main-container {
+  margin: auto;
+  min-height: 90vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+}
+
+.timer-numbers {
+  font-size: 25vw;
+  color: var(--fontColor);
+  font-family: 'Six Caps', sans-serif;
+  letter-spacing: 5vw;
+}
+.buttons {
+  color: var(--fontColor);
+  text-align: center;
+  font-size: 2.5vw;
+  letter-spacing: 0.5vw;
+  font-family: 'Six Caps', sans-serif;
+  cursor: pointer;
+}
+.buttons-inverted {
+  color: white;
+  text-align: center;
+  font-size: 5vw;
+  letter-spacing: 0.75vw;
+  font-family: 'Six Caps', sans-serif;
+}
+
+.buttons-inverted:hover {
+  background-color: var(--fontColor);
+  cursor: pointer;
+}
+
+/* this modal needs some love. want to make an animated transition here */
+.modal {
+  position: fixed;
+  display: block;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  overflow-x: hidden;
+  background-color: rgba(31, 32, 41, 0.838);
+  opacity: 1;
+  transition: opacity 350ms 700ms ease;
+}
