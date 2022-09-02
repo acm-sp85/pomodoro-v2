@@ -41,14 +41,26 @@ function Settings(props) {
         <input
           name="minutesPomodoro"
           value={props.minutesPomodoro}
-          onChange={(e) => props.setMinutesPomodoro(parseInt(e.target.value))}
+          onChange={(e) => {
+            if (e.target.value) {
+              props.setMinutesPomodoro(parseInt(e.target.value));
+            } else {
+              props.setMinutesPomodoro(0);
+            }
+          }}
         />
         <br />
         <label className="buttons-inverted ">BREAK DURATION</label>
         <input
           name="minutesBreak"
           value={props.minutesBreak}
-          onChange={(e) => props.setMinutesBreak(parseInt(e.target.value))}
+          onChange={(e) => {
+            if (e.target.value) {
+              props.setMinutesBreak(parseInt(e.target.value));
+            } else {
+              props.setMinutesBreak(0);
+            }
+          }}
         />
         <br />
         {/* <label className="buttons-inverted">AUTOSTART</label> */}
