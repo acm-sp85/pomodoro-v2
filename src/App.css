@@ -4,6 +4,10 @@
 
 * {
   margin: 0px;
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
 }
 /* body {
   background-color: rgb(96, 124, 176);
